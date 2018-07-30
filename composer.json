@@ -1,6 +1,7 @@
 {
     "name": "hode/hode",
-    "type": "hodencia, php, full",
+    "description": "Framework PHP desenvolvido para Hode Agência Web",
+    "type": "hode, agencia, php, full, framework",
     "authors": [
         {
             "name": "Edimar Barros",
@@ -9,7 +10,8 @@
     ],
     "require": {
         "pimple/pimple": "^3.2",
-        "symfony/http-foundation": "^4.1"
+        "symfony/http-foundation": "^4.1",
+        "zendframework/zend-eventmanager": "^3.2"
     },
     "autoload": {
     	"psr-4": {

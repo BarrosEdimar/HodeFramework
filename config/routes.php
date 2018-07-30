@@ -1,6 +1,6 @@
 <?php 
 
-$router->add('GET', '/', function (){
+$router->add('GET', '/', function () {
 	return 'Esta na homepage';
 });
 
