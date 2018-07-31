@@ -1,13 +1,13 @@
 <?php 
 
-namespace App;
+namespace Hode\Framework\Tasks;
 
 use Hode\Framework\Modules\Contract;
 
 class Module implements Contract {
     public function getNamespaces() :array {
         return [
-            'App\\' => __DIR__ . '/src'
+            'Hode\\Framework\\Tasks\\' => __DIR__ . '/src'
         ];
     }
 

@@ -6,6 +6,7 @@ use App\Models\Users;
 class UsersController {
     public function show($container, $request) {
         $user = new Users($container);
+        $user->create(['name' => 'Edimar']);
         return $user->get($request->attributes->get(1));
     }
 }

@@ -28,10 +28,6 @@ class ComposerStaticInitaa4bcd45bfc1da146dd4967f39d15dd2
         array (
             'Hode\\Framework\\' => 15,
         ),
-        'A' => 
-        array (
-            'App\\' => 4,
-        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -54,10 +50,6 @@ class ComposerStaticInitaa4bcd45bfc1da146dd4967f39d15dd2
         'Hode\\Framework\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
-        ),
-        'App\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/app',
         ),
     );
 

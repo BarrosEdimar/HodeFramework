@@ -15,8 +15,7 @@
     },
     "autoload": {
     	"psr-4": {
-    		"Hode\\Framework\\": "src",
-    		"App\\": "app"
+    		"Hode\\Framework\\": "src"    		
     	}
     },
     "scripts": {

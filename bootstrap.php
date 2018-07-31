@@ -1,20 +1,11 @@
 <?php 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
-require __DIR__.'/vendor/autoload.php';
+$composer = require __DIR__.'/vendor/autoload.php';
 
-$router = new Hode\Framework\Router;
+require __DIR__. '/config/modules.php';
 
-require __DIR__ . '/config/containers.php';
-require __DIR__ . '/config/routes.php';
-
-try {
-	$result = $router->run();
-	$response = new Hode\Framework\Response;
-	$params = [
-		'container' => $container,
-		'params' => $result['params'],
-	];
-	$response($result['action'], $params);
-} catch (\Hode\Framework\Exceptions\HttpException $e) {
-	echo json_encode(['error' => $e->getMessage()]);
-}
+$app = new Hode\Framework\App($composer, $modules);
+$app->run();

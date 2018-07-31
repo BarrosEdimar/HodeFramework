@@ -11,5 +11,4 @@ return array(
     'Symfony\\Component\\HttpFoundation\\' => array($vendorDir . '/symfony/http-foundation'),
     'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
     'Hode\\Framework\\' => array($baseDir . '/src'),
-    'App\\' => array($baseDir . '/app'),
 );
