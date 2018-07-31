@@ -1,12 +1,10 @@
 <?php
 
 namespace App\Controllers;
-use App\Models\Users;
+use Hode\Framework\CrudController;
 
-class UsersController {
-    public function show($container, $request) {
-        $user = new Users($container);
-        $user->create(['name' => 'Edimar']);
-        return $user->get($request->attributes->get(1));
+class UsersController extends CrudController {
+    protected function getModel(): string {
+        return 'users_model';
     }
 }
