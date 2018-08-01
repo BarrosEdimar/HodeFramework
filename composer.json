@@ -16,10 +16,14 @@
     "autoload": {
     	"psr-4": {
     		"Hode\\Framework\\": "src"    		
-    	}
+        },
+        "files": [
+            "src/helpers.php"
+        ]
     },
     "scripts": {
-    	"server": "php -S localhost:8080 -t public"
+        "server": "php -S localhost:8080 -t public",
+        "fresh": "php database.php fresh"
     },
     "config": {
     	"process-timeout": 0
